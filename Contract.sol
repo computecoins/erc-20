@@ -344,7 +344,7 @@ contract ERC20Detailed is IERC20 {
 }
 
 contract COMPUTE is ERC20, ERC20Detailed {
-    constructor(uint256 initialSupply) ERC20Detailed("ComputeCoins.com", "COMPUTE", 18) public {
-        _mint(msg.sender, initialSupply);
+    constructor() ERC20Detailed("ComputeCoins.com", "COMPUTE", 18) public {
+        _mint(msg.sender, 100000000000000000000000000);
     }
 }
